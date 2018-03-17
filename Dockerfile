@@ -40,7 +40,7 @@ RUN export CONTAINERPILOT_CHECKSUM=b10b30851de1ae1c095d5f253d12ce8fe8e7be17 \
     && tar zxf /tmp/${archive} -C /usr/local/bin \
     && rm /tmp/${archive}
 
-COPY wait-for-http.sh /usr/local/bin/
+COPY /*.sh /usr/local/bin/
 RUN chmod 500 /usr/local/bin/*.sh
 
 ENTRYPOINT []
